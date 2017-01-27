@@ -6,9 +6,12 @@
 with Gtk.Main;
 with Gtk.Enums;
 with Gtk.Window;
+with Gtk.Button;
 
 procedure Okienko is
+
    Main_Window : Gtk.Window.Gtk_Window;
+
 begin
    --Gtk.Main.Set_Locale;
    Gtk.Main.Init;
