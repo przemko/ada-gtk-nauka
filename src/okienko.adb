@@ -1,3 +1,8 @@
+-- okienko.adb
+--
+-- Tworzenie i otwieranie okienka.
+--
+
 with Gtk.Main;
 with Gtk.Enums;
 with Gtk.Window;
