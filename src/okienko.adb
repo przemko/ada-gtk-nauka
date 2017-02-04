@@ -13,7 +13,6 @@ procedure Okienko is
    Main_Window : Gtk.Window.Gtk_Window;
 
 begin
-   --Gtk.Main.Set_Locale;
    Gtk.Main.Init;
    Gtk.Window.Gtk_New (Window => Main_Window,
                        The_Type => Gtk.Enums.Window_Toplevel);
