@@ -1,4 +1,4 @@
--- okienko.adb
+-- przycisk.adb
 --
 -- Przemyslaw Kobylanski <przemko@mac.com>
 --
@@ -15,7 +15,7 @@ with Gtk.Widget;
 
 with Exit_Main;
 
-procedure Okienko is
+procedure Przycisk is
 
    Main_Window : Gtk.Window.Gtk_Window;
 
@@ -23,10 +23,10 @@ begin
    Gtk.Main.Init;
 
    Gtk.Window.Gtk_New (Main_Window, Gtk.Enums.Window_Toplevel);
-   Gtk.Window.Set_Title (Main_Window, "Glowne okienko");
+   Gtk.Window.Set_Title (Main_Window, "Okienko z przyciskiem");
    Main_Window.On_Destroy (Exit_Main'Access);
    Gtk.Window.Show_All (Main_Window);
 
    Gtk.Main.Main;
-end Okienko;
+end Przycisk;
 
