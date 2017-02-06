@@ -17,10 +17,8 @@ procedure Okienko is
 begin
    Gtk.Main.Init;
 
-   Gtk.Window.Gtk_New (Window => Main_Window,
-                       The_Type => Gtk.Enums.Window_Toplevel);
-   Gtk.Window.Set_Title (Window => Main_Window,
-                         Title => "Glowne okienko");
+   Gtk.Window.Gtk_New (Main_Window, Gtk.Enums.Window_Toplevel);
+   Gtk.Window.Set_Title (Main_Window, "Glowne okienko");
    Main_Window.On_Destroy (Exit_Main'Access);
    Gtk.Window.Show_All (Main_Window);
 
